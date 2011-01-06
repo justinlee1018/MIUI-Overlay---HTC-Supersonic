@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.android.server.status.StatusBarView android:background="@drawable/statusbar_background" android:focusable="true" android:descendantFocusability="afterDescendants"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textColor="@color/white" android:gravity="center" android:id="@id/text_back_to_call" android:background="@drawable/status_bar_phone_bg" android:layout_width="fill_parent" android:layout_height="50.0dip" android:text="@string/status_bar_back_to_call" android:singleLine="true" />
+        <FrameLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@id/icons" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/status_bar_height">
+                    <com.android.server.status.IconMerger android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/notificationIcons" android:paddingLeft="6.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" android:layout_alignParentLeft="true" />
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/statusIcons" android:paddingRight="6.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentRight="true" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/ticker" android:paddingLeft="6.0dip" android:animationCache="false" android:layout_width="fill_parent" android:layout_height="@dimen/status_bar_height">
+                <ImageSwitcher android:id="@id/tickerIcon" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="8.0dip">
+                    <com.android.server.status.AnimatedImageView android:layout_width="25.0dip" android:layout_height="25.0dip" />
+                    <com.android.server.status.AnimatedImageView android:layout_width="25.0dip" android:layout_height="25.0dip" />
+                </ImageSwitcher>
+                <com.android.server.status.TickerView android:id="@id/tickerText" android:paddingTop="2.0dip" android:paddingRight="10.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:textColor="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" />
+                    <TextView android:textColor="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" />
+                </com.android.server.status.TickerView>
+            </LinearLayout>
+            <com.android.server.status.DateView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/white" android:gravity="left|center" android:id="@id/date" android:paddingLeft="6.0px" android:paddingRight="6.0px" android:layout_width="wrap_content" android:layout_height="@dimen/status_bar_height" android:singleLine="true" />
+            <View android:id="@id/battery_indicator" android:layout_width="0.0dip" android:layout_height="0.0dip" />
+            <View android:id="@id/battery_indicator_charging" android:layout_width="0.0dip" android:layout_height="0.0dip" />
+        </FrameLayout>
+    </LinearLayout>
+</com.android.server.status.StatusBarView>

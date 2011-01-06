@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.android.server.status.TrackingView android:orientation="vertical" android:focusable="true" android:visibility="gone" android:descendantFocusability="afterDescendants"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="@drawable/status_bar_background" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="34.0dip" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <View android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <LinearLayout android:orientation="vertical" android:id="@id/close" android:background="@drawable/status_bar_switch" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="60.0dip">
+                <TextView android:textSize="20.0dip" android:textColor="@color/status_bar_header_btn_text" android:gravity="center" android:id="@id/clear_all_button" android:background="@drawable/status_bar_header_btn_bg" android:layout_width="146.0dip" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:text="@string/status_bar_clear_all_button" />
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/battery_low_notification_button" android:background="@drawable/status_bar_header_btn_bg" android:visibility="gone" android:layout_width="146.0dip" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip">
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/status_bar_battery_low_notification_icon" />
+                    <TextView android:textSize="20.0dip" android:textColor="@color/status_bar_header_btn_text" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:text="@string/status_bar_battery_low_notification_button" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/traffic_status_panel" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="40.0dip">
+                <View android:background="#80d5d5d5" android:layout_width="fill_parent" android:layout_height="1.0px" />
+                <LinearLayout android:orientation="horizontal" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+                    <TextView android:textSize="14.0sp" android:textColor="#ff535763" android:gravity="left|center" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:text="@string/status_bar_traffic_title" android:layout_weight="1.0" />
+                    <TextView android:textSize="14.0sp" android:textColor="#ff535763" android:gravity="right|center" android:id="@id/traffic_status" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" />
+                </LinearLayout>
+            </LinearLayout>
+            <ScreenView android:id="@id/button_panel" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:id="@id/button_wifi" android:text="@string/status_bar_button_wifi" style="\@style/StatusBarQuickSetting" />
+                <TextView android:id="@id/button_apn" android:text="@string/status_bar_button_apn" style="\@style/StatusBarQuickSetting" />
+                <TextView android:id="@id/button_rotate" android:text="@string/status_bar_button_rotate" style="\@style/StatusBarQuickSetting" />
+                <TextView android:id="@id/button_brightness" android:text="@string/status_bar_button_brightness" style="\@style/StatusBarQuickSetting" />
+                <TextView android:id="@id/button_ringer" android:text="@string/status_bar_button_ringer_normal" style="\@style/StatusBarQuickSetting" />
+                <TextView android:id="@id/button_vibrate" android:text="@string/status_bar_button_vibrate" style="\@style/StatusBarQuickSetting" />
+                <TextView android:id="@id/button_bluetooth" android:text="@string/status_bar_button_bluetooth" style="\@style/StatusBarQuickSetting" />
+                <TextView android:id="@id/button_gps" android:text="@string/status_bar_button_gps" style="\@style/StatusBarQuickSetting" />
+                <TextView android:id="@id/button_sync" android:text="@string/status_bar_button_sync" style="\@style/StatusBarQuickSetting" />
+                <TextView android:id="@id/button_cpu" android:text="@string/status_bar_button_cpu" style="\@style/StatusBarQuickSetting" />
+                <TextView android:id="@id/button_flight_mode" android:text="@string/status_bar_button_flight_mode" style="\@style/StatusBarQuickSetting" />
+                <TextView android:id="@id/button_lock" android:text="@string/status_bar_button_lock" android:drawableTop="@drawable/status_bar_switch_apps_lock" style="\@style/StatusBarQuickSetting" />
+                <TextView android:id="@id/button_torch" android:text="@string/status_bar_button_torch" android:drawableTop="@drawable/status_bar_switch_apps_torch_off" style="\@style/StatusBarQuickSetting" />
+                <TextView android:id="@id/button_reboot" android:text="@string/status_bar_button_reboot" android:drawableTop="@drawable/status_bar_switch_apps_restart" style="\@style/StatusBarQuickSetting" />
+                <TextView android:id="@id/button_shutdown" android:text="@string/status_bar_button_shutdown" android:drawableTop="@drawable/status_bar_switch_apps_poweroff" style="\@style/StatusBarQuickSetting" />
+            </ScreenView>
+            <com.android.server.status.CloseDragHandle android:layout_gravity="bottom" android:id="@id/close_handle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/status_bar_close_on" android:scaleType="fitXY" />
+        </LinearLayout>
+    </LinearLayout>
+</com.android.server.status.TrackingView>

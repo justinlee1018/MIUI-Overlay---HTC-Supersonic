@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="14.0sp" android:textColor="#80ffffff" android:ellipsize="marquee" android:layout_gravity="top|center" android:id="@id/title" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginTop="6.0dip" android:layout_marginRight="6.0dip" android:singleLine="true" android:shadowColor="#48000000" android:shadowDx="0.0" android:shadowDy="2.0" android:shadowRadius="2.0" />
+    <TextView android:textSize="13.0sp" android:textColor="#80ffffff" android:id="@id/album" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <LinearLayout android:background="@drawable/keyguard_screen_music_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="7.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="7.0dip">
+        <ImageView android:id="@id/previous" android:layout_width="0.0dip" android:layout_height="wrap_content" android:src="@drawable/keyguard_screen_music_previous" android:layout_weight="1.0" />
+        <ImageView android:id="@id/play_pause" android:layout_width="0.0dip" android:layout_height="wrap_content" android:src="@drawable/keyguard_screen_music_play" android:layout_weight="1.0" />
+        <ImageView android:id="@id/next" android:layout_width="0.0dip" android:layout_height="wrap_content" android:src="@drawable/keyguard_screen_music_next" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

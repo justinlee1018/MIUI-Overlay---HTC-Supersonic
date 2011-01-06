@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.android.internal.view.menu.ExpandedMenuView android:id="@id/expanded_menu" android:background="@drawable/menu_more_bg" android:layout_width="300.0dip" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" />
