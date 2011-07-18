@@ -1,3 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<com.android.internal.view.menu.ListMenuItemView android:textSize="20.0sp" android:background="@drawable/list_menu_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginTop="4.0dip" android:layout_marginRight="6.0dip" android:layout_marginBottom="4.0dip"
-  xmlns:android="http://schemas.android.com/apk/res/android" />

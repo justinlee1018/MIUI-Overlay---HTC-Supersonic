@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="65.0sp"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <com.android.server.status.LatestItemView android:id="@id/content" android:background="@drawable/status_bar_item_background" android:paddingRight="6.0sp" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="64.0sp" />
-    <View android:background="@drawable/divider_horizontal_bright" android:layout_width="fill_parent" android:layout_height="1.0px" />
-</LinearLayout>

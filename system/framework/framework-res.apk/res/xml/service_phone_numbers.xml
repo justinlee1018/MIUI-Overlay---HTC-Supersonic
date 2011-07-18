@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<ServicePhoneNumbers>
-    <Rule min_digits="0" max_digits="5" />
-    <Rule start_with="400" min_digits="10" />
-    <Rule start_with="13800138000" min_digits="11" max_digits="11" />
-</ServicePhoneNumbers>

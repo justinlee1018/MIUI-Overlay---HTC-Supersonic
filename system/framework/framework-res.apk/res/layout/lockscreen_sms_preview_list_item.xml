@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<RelativeLayout android:layout_width="fill_parent" android:layout_height="58.329987dip"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <TextView android:textAppearance="?textAppearanceSmall" android:textColor="#ffffffff" android:id="@id/date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="11.659973dip" android:layout_marginRight="8.0dip" android:singleLine="true" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
-    <TextView android:textAppearance="?textAppearanceMedium" android:textSize="16.0sp" android:ellipsize="marquee" android:gravity="center_vertical" android:id="@id/line1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:singleLine="true" android:layout_toLeftOf="@id/date" android:layout_alignBottom="@id/date" android:layout_alignParentLeft="true" android:layout_alignWithParentIfMissing="true" />
-    <TextView android:textAppearance="?textAppearanceSmall" android:textSize="13.0sp" android:textColor="#99ffffff" android:ellipsize="end" android:id="@id/text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_below="@id/line1" android:layout_alignLeft="@id/line1" android:layout_alignRight="@id/date" android:layout_alignWithParentIfMissing="true" />
-</RelativeLayout>
