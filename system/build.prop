@@ -99,7 +99,7 @@ ro.com.android.wifi-watchlist=GoogleGuest
 ro.setupwizard.enterprise_mode=1
 ro.com.android.dateformat=MM-dd-yyyy
 ro.com.android.dataroaming=false
-ro.modversion=MIUIUS-1.7.1.0-EN-SUPERSONIC
+ro.modversion=MIUIUS-1.7.15.0-EN-SUPERSONIC
 ro.setupwizard.mode=DISABLED
 dalvik.vm.dexopt-flags=m=y
 net.bt.name=Android

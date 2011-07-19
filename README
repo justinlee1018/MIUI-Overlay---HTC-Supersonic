@@ -1,3 +1,20 @@
 overlay for porting MIUI to the HTC Evo
 original froyo overlay by bcnice20
 updated gingerbread overlay by me
+
+7/18/2011
+Initial commit of overlay
+
+
+7/18/2011
+Fix ramdisk to allow FM Radio
+
+In boot.img-ramdisk/init.supersonic.rc
+Add to end:
+service fmradio /system/bin/fmradioserver
+    group bluetooth net_bt_admin
+
+
+7/19/2011
+Touched up build.prop for Rom Manager detection
+Added GoogleQuickSearchBox.apk and MIUI.us_Forums_1.1.2_AdSupported.apk to /system/app
