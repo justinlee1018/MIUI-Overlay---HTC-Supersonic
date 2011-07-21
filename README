@@ -2,12 +2,20 @@ overlay for porting MIUI to the HTC Evo
 original froyo overlay by bcnice20
 updated gingerbread overlay by me
 
+framework.jar instructions:
+Decompile classes.dex from original MIUI framework.jar
+Overwrite two files from overlay in respective directory
+Recompile classes.dex and insert in MIUI framework.jar
+
+framework-res.apk instructions:
+Replace eri.xml in MIUI framework-res.apk/res/xml/ with file from overlay
+
 7/18/2011
 Initial commit of overlay
 
 
 7/18/2011
-Fix ramdisk to allow FM Radio
+Fix ramdisk to allow FM Radio (Credit: Lithid)
 
 In boot.img-ramdisk/init.supersonic.rc
 Add to end:
