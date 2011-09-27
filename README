@@ -26,3 +26,7 @@ service fmradio /system/bin/fmradioserver
 7/19/2011
 Touched up build.prop for Rom Manager detection
 Added GoogleQuickSearchBox.apk and MIUI.us_Forums_1.1.2_AdSupported.apk to /system/app
+
+
+9/27/2011
+Remove lib file causing bootloops
