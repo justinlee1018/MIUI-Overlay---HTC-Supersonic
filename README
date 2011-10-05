@@ -1,14 +1,14 @@
 Overlay for porting MIUI to the HTC Evo
-Original froyo overlay by bcnice20
-updated gingerbread overlay by me
+Original froyo overlay by bcnice20 and bigrushdog
+Updated gingerbread overlay by myself
 
 framework.jar instructions:
 Use baksmali to decomiple classes.dex from original MIUI framework.jar
-Overwrite two files from overlay in respective directory
+Overwrite two files from overlay in respective directory (pduparser.smali and pdupersister.smali)
 Use smali to recompile classes.dex and insert in MIUI framework.jar
 
 framework-res.apk instructions:
-Replace eri.xml in MIUI framework-res.apk/res/xml/ with file from overlay
+Replace eri.xml in MIUI framework-res.apk/res/xml/ with file from overlay (no need to decompile)
 
 7/18/2011
 Initial commit of overlay
@@ -16,22 +16,24 @@ Initial commit of overlay
 
 7/18/2011
  - Fix ramdisk to allow FM Radio (Credit: Lithid)
-
- - In boot.img-ramdisk/init.supersonic.rc
-Add to end:
+: In boot.img-ramdisk/init.supersonic.rc
+Add:
 service fmradio /system/bin/fmradioserver
     group bluetooth net_bt_admin
 
 
 7/19/2011
-Touched up build.prop for Rom Manager detection
-Added GoogleQuickSearchBox.apk and MIUI.us_Forums_1.1.2_AdSupported.apk to /system/app
-
+Touched up build.prop for Rom Manager and OTA detection
+Make search capacitive key default to Google search instead of MIUI
+Add MIUI.us forums app
 
 9/27/2011
  - Remove lib file causing bootloops
- - In boot.img-ramdisk/init.rc
+ - Update ramdisk for netd service
 Add last line:
 service netd /system/bin/netd
     socket netd stream 0660 root system
     socket dnsproxyd stream 0660 root inet
+
+10/4/2011
+ - Organize repo and README
